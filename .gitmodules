@@ -3,4 +3,4 @@
 	url = https://github.com/ROCm-Developer-Tools/HIP
 [submodule "HIPIFY"]
 	path = HIPIFY
-	url = https://github.com/ROCm/HIPIFY.git
+	url = https://github.com/ROCm/HIPIFY
