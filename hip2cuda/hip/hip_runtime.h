@@ -268,6 +268,12 @@
 #define hipBindTexture2D cudaBindTexture2D
 #define hipBindTextureToArray cudaBindTextureToArray
 #define hipBindTextureToMipmappedArray cudaBindTextureToMipmappedArray
+#define hipBlockDim_x blockDim.x
+#define hipBlockDim_y blockDim.y
+#define hipBlockDim_z blockDim.z
+#define hipBlockIdx_x blockIdx.x
+#define hipBlockIdx_y blockIdx.y
+#define hipBlockIdx_z blockIdx.z
 #define hipBoundaryModeClamp cudaBoundaryModeClamp
 #define hipBoundaryModeTrap cudaBoundaryModeTrap
 #define hipBoundaryModeZero cudaBoundaryModeZero
@@ -548,7 +554,6 @@
 #define hipEventSynchronize cudaEventSynchronize
 #define hipEventWaitNodeParams cudaEventWaitNodeParams
 #define hipEvent_t cudaEvent_t
-#define hipExtModuleLaunchKernel cuLaunchKernel
 #define hipExtent cudaExtent
 #define hipExternalMemoryBufferDesc cudaExternalMemoryBufferDesc
 #define hipExternalMemoryBufferDesc_st CUDA_EXTERNAL_MEMORY_BUFFER_DESC_st
@@ -1213,6 +1218,9 @@
 #define hipTextureTypeCubemap cudaTextureTypeCubemap
 #define hipTextureTypeCubemapLayered cudaTextureTypeCubemapLayered
 #define hipThreadExchangeStreamCaptureMode cudaThreadExchangeStreamCaptureMode
+#define hipThreadIdx_x threadIdx.x
+#define hipThreadIdx_y threadIdx.y
+#define hipThreadIdx_z threadIdx.z
 #define hipUUID cudaUUID_t
 #define hipUUID_t CUuuid_st
 #define hipUnbindTexture cudaUnbindTexture
