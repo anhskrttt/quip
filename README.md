@@ -30,11 +30,11 @@ $ ./quip.py
 
 ### HIP2CUDA
 ```
-# Compile
-user@a100-1:~/utils/quip/examples$  nvcc -I../hip2cuda -x cu sample_hip.cpp -o hip
+# Compile source code
+user@a100-0:~/quip/examples$  nvcc -I../hip2cuda -x cu sample_hip.cpp -o hip
 
 # Run program
-user@a100-1:~/utils/quip/examples$ ./hip
+user@a100-0:~/quip/examples$ ./hip
  System minor 0
  System major 8
  agent prop name NVIDIA A100 80GB PCIe
@@ -45,14 +45,14 @@ PASSED!
 ### CUDA2HIP
 ```
 # Compile source code
-# Please ignore warnings generated as this is just an example
-user@mi250-9:~/utils/quip/examples$ hipcc sample_hip.cpp
+user@mi250-0:~/quip/examples$ hipcc -I../cuda2hip sample_cuda.cu -o cuda
 
 # Run program
-user@mi250-9:~/utils/quip/examples$ ./a.out
- System minor 0
- System major 9
- agent prop name AMD Instinct MI250X/MI250
-hip Device prop succeeded
-PASSED!
+user@mi250-0:~/quip/examples$ ./cuda
+[Vector addition of 50000 elements]
+Copy input data from the host memory to the CUDA device
+CUDA kernel launch with 196 blocks of 256 threads
+Copy output data from the CUDA device to the host memory
+Test PASSED
+Done
 ```
