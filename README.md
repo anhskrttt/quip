@@ -17,7 +17,7 @@ To compile for AMD GPUs, add the following argument to your `hipcc` compile line
 To regenerate the header files, update the local clone of the [HIPIFY repo](https://github.com/ROCm/HIPIFY).
 ```
 $ cd <quip-path>/HIP
-$ git pull
+$ git submodule update --init --recursive
 ```
 
 Then run the generation script.
